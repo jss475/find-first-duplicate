@@ -1,5 +1,17 @@
 function findFirstDuplicate(arr) {
   // type your code here
+
+  //go through the array
+  //store the numbers seen in an object
+  //when numbers seen equals current array, output that number
+
+  let seenNumbers = {}
+  for(num of arr){
+    if(num in seenNumbers === true){
+      return num
+    }
+  }
+  return -1
 }
 
 if (require.main === module) {
